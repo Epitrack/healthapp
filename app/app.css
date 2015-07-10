@@ -416,8 +416,10 @@ button:focus {
 }
 
 .title-primary.title-home {
-  margin-top: 40px;
-  padding-top: 70px;
+  margin-top: 10px;
+  padding-top: 30px;
+  /*margin-top: 40px;*/
+  /*padding-top: 70px;*/
 }
 
 /* 

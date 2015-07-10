@@ -375,7 +375,8 @@ button:focus {
   border-radius: 100%;
   border: none;
   position: relative;
-  bottom: -40px;
+  bottom: 30px;
+  /*bottom: -40px;*/
   left: 50%;
   margin-left: -28px;
   z-index: 999999;

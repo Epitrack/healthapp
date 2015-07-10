@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 ::-webkit-input-placeholder {
@@ -1163,6 +1164,12 @@ body.body-login {
   _symptoms
 */
 
+.symptoms {
+  overflow: auto;
+  height: 640px;
+  background-color: red;
+}
+
 .title-primary.title-symptoms {
   margin-top: 40px;
 }
@@ -1255,7 +1262,7 @@ body.body-login {
 
 .map-include {
   position: absolute;
-  top: 0;
+  top: 80%;
   left: 0;
   width: 100%;
   height: 100%;

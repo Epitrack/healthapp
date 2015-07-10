@@ -231,7 +231,8 @@ button:focus {
 }
 
 .wrapper-menu.js-open {
-  height: 405px;
+  height: 420px;
+  /*height: 405px;*/
   bottom: 391px;
 }
 

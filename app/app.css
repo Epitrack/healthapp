@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 ::-webkit-input-placeholder {
@@ -231,7 +232,8 @@ button:focus {
 
 .wrapper-menu.js-open {
   height: 405px;
-  bottom: 391px;
+  bottom: 420px;
+  /*bottom: 391px;*/
 }
 
 /* Cards */
@@ -374,7 +376,8 @@ button:focus {
   border-radius: 100%;
   border: none;
   position: relative;
-  bottom: -40px;
+  bottom: 30px;
+  /*bottom: -40px;*/
   left: 50%;
   margin-left: -28px;
   z-index: 999999;
@@ -415,8 +418,10 @@ button:focus {
 }
 
 .title-primary.title-home {
-  margin-top: 40px;
-  padding-top: 70px;
+  margin-top: 10px;
+  padding-top: 30px;
+  /*margin-top: 40px;*/
+  /*padding-top: 70px;*/
 }
 
 /* 
@@ -1163,6 +1168,11 @@ body.body-login {
   _symptoms
 */
 
+.symptoms {
+  overflow: auto;
+  height: 640px;
+}
+
 .title-primary.title-symptoms {
   margin-top: 40px;
 }
@@ -1255,7 +1265,7 @@ body.body-login {
 
 .map-include {
   position: absolute;
-  top: 0;
+  top: 80%;
   left: 0;
   width: 100%;
   height: 100%;

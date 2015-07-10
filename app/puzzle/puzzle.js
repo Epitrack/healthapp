@@ -62,7 +62,7 @@ angular.module('myApp.puzzle', ['ngRoute'])
     mask.classList.remove('js-show');
     questionID.classList.remove('js-show');
 
-    if ($scope.questions.length == 2) {
+    if ($scope.questions.length == 9) {
       mask.classList.toggle('js-show');
       medal.classList.toggle('js-show');
     }

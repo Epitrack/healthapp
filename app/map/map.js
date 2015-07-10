@@ -13,6 +13,7 @@ angular.module('myApp.map', ['ngRoute'])
   $rootScope.bodylayout = 'body-map';
 
   GetMap.requestLocation();
+  // GetMap.requestMarkers();
 })
 
 .factory('GetMap', function ($http) {
@@ -45,7 +46,30 @@ angular.module('myApp.map', ['ngRoute'])
       }
     },
 
-    requestMarkers: function() {}
+    requestMarkers: function() {
+      $http({
+        url: 'https://flunearyou.org/map/markers',
+        method: 'GET'
+      }).success(function(data) {
+        var map = new GMaps({
+          zoom: 12
+        });
+
+        for (var i = 0; i <= data.length; i++) {
+          map.addMarker({
+            lat: data[i].latitude,
+            lng: data[i].longitude,
+            title: data[i].city,
+            // icon: 'images/icon-map-brasil.png',
+            infoWindow: {
+              content: '<p>' + data[i].city + '</p>'
+            }
+          });
+        }
+      }).error(function(error) {
+        console.warn('Request data error:', error);
+      });
+    }
   }
 
   return obj;

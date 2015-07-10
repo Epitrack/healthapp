@@ -9,7 +9,7 @@ angular.module('myApp.symptoms', ['ngRoute'])
   });
 }])
 
-.controller('SymptomsCtrl', function($scope, $http, $routeParams, SymptomsItem, $rootScope) {
+.controller('SymptomsCtrl', function($scope, $http, $routeParams, SymptomsItem, $rootScope, $location) {
   $scope.title = 'How is your health today?';
   $scope.subtitle = 'Select the symptoms you are feeling.';
 

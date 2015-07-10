@@ -1,0 +1,73 @@
+[
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Fever",
+      "symptomId": "fever"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Cough",
+      "symptomId": "cough"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Sore throat",
+      "symptomId": "sore-throat"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Shortness of breath",
+      "symptomId": "shortness-of-breath"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Nausea or vomiting",
+      "symptomId": "nausea-or-vomiting"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Diarrhea",
+      "symptomId": "diarrhea"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Joint Pain",
+      "symptomId": "joint-pain"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Headache",
+      "symptomId": "headache"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Bleeding",
+      "symptomId": "bleeding"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Rash",
+      "symptomId": "rash"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Dark urine",
+      "symptomId": "dark-urine"
+   },
+
+   {
+      "icon": "https://cdn0.iconfinder.com/data/icons/feather/96/circle-check-64.png",
+      "symptom": "Red eyes",
+      "symptomId": "red-eyes"
+   }
+]

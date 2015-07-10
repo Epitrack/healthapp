@@ -1,0 +1,42 @@
+<div ng-controller="GeneralCtrl">
+  <button id="menu-primary" class="menu-primary" ng-click="toggleMenu()">Menu</button>
+
+  <div id="wrapper-menu" class="wrapper-menu">
+    <ul id="global-menu" class="global-menu">
+      <li>
+        <span class="profile"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/">Profile</a>
+      </li>
+
+      <li>
+        <span class="health-diary"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/">Health Diary</a>
+      </li>
+
+      <li>
+        <span class="health-tips"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/puzzle">Health Tips</a>
+      </li>
+
+      <li>
+        <span class="achievements"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/">Achievements</a>
+      </li>
+
+      <li>
+        <span class="health-map"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/map">Health Map</a>
+      </li>
+
+      <li>
+        <span class="have-fun"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/puzzle">Have Fun!</a>
+      </li>
+      
+      <li>
+        <span class="configuration"></span>
+        <a ng-click="toggleMenu(); removeMask();" ng-href="#/">Configuration</a>
+      </li>
+    </ul>
+  </div>
+</div>

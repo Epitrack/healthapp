@@ -1,0 +1,23 @@
+<section id="symptoms" class="symptoms">
+  <h2 class="title-primary title-symptoms">{{ title }}</h2>
+  <h4 class="subtitle secondary">{{ subtitle }}</h4>
+
+  <form id="submit-symptoms" class="submit-symptoms">
+    <ul class="list-symptoms">
+      <li class="item-symptoms" ng-repeat="symptom in symptoms">
+        <input id="{{symptom.symptomId}}" type="checkbox" 
+        value="{{symptom.symptom}}" ng-model="selected[symptom.symptoms]"/>
+        <label for="{{symptom.symptomId}}">{{symptom.symptom}}</label>
+      </li>
+    </ul>
+
+    <div class="spinner spinner-survey">
+      <div class="spinner-circle spinner-circle-single-1"></div>
+      <button class="btn-primary send-survey" value="Send"  ng-click="sendSymptoms()"> Send </button>
+      <div class="spinner-circle spinner-circle-single-2"></div>
+    </div>
+  </form>
+</section>
+
+<!-- Menu -->
+<div ng-include src="'menu.html'"></div>

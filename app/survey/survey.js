@@ -9,7 +9,7 @@ angular.module('myApp.survey', ['ngRoute'])
   });
 }])
 
-.controller('SurveyCtrl', function($scope, $http, $routeParams, SurveyInternal, $rootScope, $httpParamSerializer) {
+.controller('SurveyCtrl', function($scope, $http, $routeParams, $rootScope, $httpParamSerializer) {
   $scope.subtitle = 'How is your health today?';
 
   $rootScope.bodylayout = 'body-survey';
@@ -26,36 +26,4 @@ angular.module('myApp.survey', ['ngRoute'])
       console.warn('Send survey failed.', err);
     });
   };
-
-  SurveyInternal.getSurveyInternal(function(data) {
-    $scope.surveys = data;
-  });
-})
-
-.factory('SurveyInternal', function ($http) {
-  var listSurveyInternal, obj;
-  obj = {};
-
-  obj = {
-    getSurveyInternal: function(callback) {
-      if (listSurveyInternal) {
-        callback(listSurveyInternal);
-        return false;
-      } else {
-        $http({
-          method: 'GET',
-          url: 'data/surveys.json'
-        }).success(function(data) {
-          obj.saveSurveyInternal(data);
-          callback(data);
-        });
-      }
-    },
-
-    saveSurveyInternal: function(data) {
-      listSurveyInternal = data;
-    }
-  }
-
-  return obj;
 });
